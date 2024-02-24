@@ -1,15 +1,14 @@
+// for loop
 function calcul (base, taux, years) {
   for (let i = 0; i < years; i++) {
       base *= (1+taux);
   }
   console.log(`Sum after ${years} years at ${Math.floor(taux*100)}%: USD ${Math.floor(base)}`)
 }
-
-
 calcul (85000, 0.09, 8);
 
 
-
+//recursive function
 function calcul2(a,b,c) {
   if (c === 9) {
       console.log("DONE");
